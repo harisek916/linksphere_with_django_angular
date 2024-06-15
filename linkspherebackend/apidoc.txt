@@ -1,0 +1,126 @@
+1. Api for registering a new user
+    url:-http://127.0.0.1:8000/api/register/
+    method:-post
+    data:-{username,email,password}
+    authorization:nill
+    status:completed
+
+2. Api for fetching token
+    url:-http://127.0.0.1:8000/api/token/
+    method:-post
+    data:-{username,password}
+    authorization:-nill
+    status:completed
+
+3. Api for fetching a all profiles
+    url:-http://127.0.0.1:8000/api/profile/
+    method:-get
+    data:-{nill}
+    authorization:-Token Authentication
+    status:completed
+
+4. Api for fetching a specific profile
+    url:-http://127.0.0.1:8000/api/profile/{id}/
+    method:-put
+    data:-{nill}
+    authorization:-Token Authentication
+    status:pending
+
+5. Api for updating profile
+    url:-http://127.0.0.1:8000/api/profile/{id}/
+    method:-put
+    data:-{address,phone,profile_pic,dob,bio}
+    authorization:-Token Authentication
+    status:pending
+
+6. Api for follow/unfollow another user
+    url:-http://127.0.0.1:8000/api/profile/{id}/follow/
+    method:-get
+    data:-{nill}
+    authorization:-Token Authentication
+    status:completed
+
+7. Api for block/unblock another user
+    url:-http://127.0.0.1:8000/api/profile/{id}/block/
+    method:-get
+    data:-{nill}
+    authorization:-Token Authentication
+    status:completed
+
+8. Api for fetching a all posts
+    url:-http://127.0.0.1:8000/api/post/
+    method:-get
+    data:-{nill}
+    authorization:-Token Authentication
+    status:completed
+    
+9. Api for add post
+    url:-http://127.0.0.1:8000/api/post/
+    method:-post
+    data:-{title,post_image}
+    authorization:-Token Authentication
+    status:completed
+
+10. Api for remove post
+    url:-http://127.0.0.1:8000/api/post/{id}/
+    method:-delete
+    data:-{nill}
+    authorization:-Token Authentication
+    status:completed
+
+11. Api for like/dislike post
+    url:-http://127.0.0.1:8000/api/post/{id}/like/
+    method:-get
+    data:-{nill}
+    authorization:-Token Authentication
+    status:completed
+
+
+12. Api for comment a post
+    url:-http://127.0.0.1:8000/api/post/{id}/comment/
+    method:-post
+    data:-{text}
+    authorization:-Token Authentication
+    status:completed
+
+13. Api for remove comment
+    url:-http://127.0.0.1:8000/api/comment/{id}/
+    method:-delete
+    data:-{nill}
+    authorization:-Token Authentication
+    status:completed
+
+14. Api for list all story
+    url:-http://127.0.0.1:8000/api/story/
+    method:-get
+    data:-{nill}
+    authorization:-Token Authentication
+    status:completed
+
+15. Api for add story
+    url:-http://127.0.0.1:8000/api/story/
+    method:-post
+    data:-{title,post_image}
+    authorization:-Token Authentication
+    status:completed
+
+16. Api for fetch a specific story
+    url:-http://127.0.0.1:8000/api/story/{id}/
+    method:-get
+    data:-{nill}
+    authorization:-Token Authentication
+    status:completed
+
+17. Api for delete a specific story
+    url:-http://127.0.0.1:8000/api/story/{id}/
+    method:-delete
+    data:-{nill}
+    authorization:-Token Authentication
+    status:completed
+
+18. api for fetching request.user details
+    url:-http://127.0.0.1:8000/api/user/
+    method:-get
+    data:-{nill}
+    authorization:-Token Authentication
+
