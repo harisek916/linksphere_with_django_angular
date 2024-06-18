@@ -68,7 +68,7 @@ class UserProfileView(viewsets.ModelViewSet):
 
 class PostView(viewsets.ModelViewSet):
     serializer_class=PostSerializer
-    queryset=Posts.objects.filter(is_active=True)
+    queryset=Posts.objects.filter(is_active=True).order_by("-created_at")
     authentication_classes=[authentication.TokenAuthentication]
     permission_classes=[permissions.IsAuthenticated]
 

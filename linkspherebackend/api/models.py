@@ -36,6 +36,10 @@ class Posts(models.Model):
     @property
     def comments(self):
         return self.post_comments.all()
+    
+    @property
+    def user_profile(self):
+        return self.user.profile
 
     def __str__(self):
         return self.title

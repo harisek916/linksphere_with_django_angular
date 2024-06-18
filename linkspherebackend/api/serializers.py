@@ -33,6 +33,7 @@ class CommentSerializer(serializers.ModelSerializer):
 class PostSerializer(serializers.ModelSerializer):
     user=serializers.StringRelatedField() 
     comments=CommentSerializer(many=True,read_only=True)
+    user_profile=UserProfileSerializer(read_only=True)
     
     class Meta:
         model=Posts
