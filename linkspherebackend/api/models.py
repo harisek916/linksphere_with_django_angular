@@ -33,6 +33,7 @@ class Posts(models.Model):
     created_at=models.DateTimeField(auto_now_add=True,null=True)
     updated_at=models.DateTimeField(auto_now=True,null=True)
 
+
     @property
     def comments(self):
         return self.post_comments.all()
@@ -51,6 +52,11 @@ class Comments(models.Model):
     is_active=models.BooleanField(default=True)
     created_at=models.DateTimeField(auto_now_add=True,null=True)
     updated_at=models.DateTimeField(auto_now=True,null=True)
+
+    @property
+    def user_profile(self):
+        return self.user.profile
+
 
     def __str__(self):
         return self.text
